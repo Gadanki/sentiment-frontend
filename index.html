@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Amazon Review Sentiment Analyzer</h1>
+
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <textarea id="reviewInput" placeholder="Type your Amazon product review here..."></textarea>
+
+    <button id="analyzeBtn" onclick="analyzeSentiment()">Analyze</button>
+
+    <div id="spinner" class="spinner hidden"></div>
+
+    <div id="result" class="result-box hidden">
+        <p id="sentimentText"></p>
+        <p id="confidenceText"></p>
+        <p id="cleanedText"></p>
+    </div>
+
+    <h2>History</h2>
+    <ul id="history"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
