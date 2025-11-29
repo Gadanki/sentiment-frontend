@@ -16,8 +16,9 @@ async function analyzeSentiment() {
     spinner.classList.remove("hidden");
     resultBox.classList.add("hidden");
 
+    //https://sentiment-backend-by1g.onrender.com
     try {
-        let response = await fetch("http://127.0.0.1:5000/predict", {
+        let response = await fetch("https://sentiment-backend-by1g.onrender.com/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ review: review })
